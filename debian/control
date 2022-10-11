@@ -1,0 +1,38 @@
+Source: libslf4j-java
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Varun Hiremath <varun@debian.org>,
+ Emmanuel Bourg <ebourg@apache.org>,
+ Jakub Adam <jakub.adam@ktknet.cz>
+Build-Depends:
+ debhelper-compat (= 13),
+ default-jdk,
+ junit4,
+ libbuild-helper-maven-plugin-java,
+ libcommons-logging-java,
+ liblog4j1.2-java,
+ libmaven-antrun-plugin-java,
+ libmaven-install-plugin-java,
+ maven-debian-helper (>= 2.2~)
+Standards-Version: 4.6.0.1
+Vcs-Git: https://salsa.debian.org/java-team/libslf4j-java.git
+Vcs-Browser: https://salsa.debian.org/java-team/libslf4j-java
+Homepage: http://www.slf4j.org
+
+Package: libslf4j-java
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libcommons-logging-java, liblog4j1.2-java
+Description: Simple Logging Facade for Java
+ The Simple Logging Facade for Java (or SLF4J) is intended to serve as
+ a simple facade for various logging APIs allowing to the end-user to
+ plug in the desired implementation at deployment time. SLF4J also
+ allows for a gradual migration path away from Apache Commons
+ Logging (CL)
+ .
+ Logging API implementations can either choose to implement the SLF4J
+ interfaces directly, e.g. logback or SimpleLogger. Alternatively, it
+ is possible (and rather easy) to write SLF4J adapters for the given
+ API implementation, e.g. Log4jLoggerAdapter or JDK14LoggerAdapter.

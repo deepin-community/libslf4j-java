@@ -1,0 +1,334 @@
+libslf4j-java (1.7.32-1) unstable; urgency=medium
+
+  * New upstream release
+  * Standards-Version updated to 4.6.0.1
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Fri, 17 Sep 2021 10:43:17 +0200
+
+libslf4j-java (1.7.30-1) unstable; urgency=medium
+
+  * New upstream release
+    - Refreshed the patches
+  * Standards-Version updated to 4.5.1
+  * Switch to debhelper level 13
+  * Use salsa.debian.org Vcs-* URLs
+  * Track and download the new releases from GitHub
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Mon, 18 Jan 2021 00:57:39 +0100
+
+libslf4j-java (1.7.25-3) unstable; urgency=medium
+
+  * Team upload.
+  * Fix CVE-2018-8088: Deserialisation vulnerability in EventData constructor
+    can allow for arbitrary code execution. The EventData class was completely
+    removed due to security concerns. (Closes: #893684)
+  * Use compat level 11.
+  * Remove Damien Raude-Morvan from Uploaders. (Closes: #889393)
+  * Use https for Format field.
+  * Declare compliance with Debian Policy 4.1.3.
+
+ -- Markus Koschany <apo@debian.org>  Wed, 28 Mar 2018 11:48:23 +0200
+
+libslf4j-java (1.7.25-2) unstable; urgency=medium
+
+  * Ignore the dependency on wagon-ssh
+  * Standards-Version updated to 4.1.1
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Mon, 20 Nov 2017 09:23:49 +0100
+
+libslf4j-java (1.7.25-1) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Mon, 19 Jun 2017 15:21:53 +0200
+
+libslf4j-java (1.7.25-1~exp1) experimental; urgency=medium
+
+  * New upstream release
+  * Build depend on maven-debian-helper >= 2.2
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Thu, 18 May 2017 14:03:07 +0200
+
+libslf4j-java (1.7.22-1) unstable; urgency=medium
+
+  * New upstream release
+  * Switch to debhelper level 10
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Mon, 19 Dec 2016 09:31:41 +0100
+
+libslf4j-java (1.7.21-2) unstable; urgency=medium
+
+  * Team upload.
+  * Add disable-MultithreadedInitializationTest.patch and disable
+    the test that apparently causes build failures on systems with less than 2
+    cpu cores. (Closes: #834913)
+
+ -- Markus Koschany <apo@debian.org>  Fri, 26 Aug 2016 16:59:29 +0200
+
+libslf4j-java (1.7.21-1) unstable; urgency=medium
+
+  * New upstream release
+  * Standards-Version updated to 3.9.8 (no changes)
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Mon, 11 Apr 2016 00:42:18 +0200
+
+libslf4j-java (1.7.20-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Thu, 31 Mar 2016 09:47:05 +0200
+
+libslf4j-java (1.7.19-1) unstable; urgency=medium
+
+  * New upstream release
+    - Refreshed the patch
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Mon, 21 Mar 2016 10:37:42 +0100
+
+libslf4j-java (1.7.14-3) unstable; urgency=medium
+
+  * Team upload.
+  * Add slf4j-api-MANIFEST.patch and remove requirement on org.slf4j.impl which
+    triggers runtime errors in Netbeans.
+  * Declare compliance with Debian Policy 3.9.7.
+  * Vcs fields: Use https.
+
+ -- Markus Koschany <apo@debian.org>  Wed, 24 Feb 2016 19:12:33 +0100
+
+libslf4j-java (1.7.14-2) unstable; urgency=medium
+
+  * Fixed a build failure (Closes: #813087)
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Mon, 01 Feb 2016 22:43:14 +0100
+
+libslf4j-java (1.7.14-1) unstable; urgency=medium
+
+  * New upstream release
+  * Build with maven-debian-helper
+  * Refreshed debian/copyright
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Thu, 28 Jan 2016 13:34:49 +0100
+
+libslf4j-java (1.7.13-1) unstable; urgency=medium
+
+  * New upstream release
+    - Updated debian/manifest
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Thu, 19 Nov 2015 09:40:50 +0100
+
+libslf4j-java (1.7.12-2) unstable; urgency=medium
+
+  * Add OSGi metadata to jar manifests.
+  * Add Jakub Adam to Uploaders.
+
+ -- Jakub Adam <jakub.adam@ktknet.cz>  Sat, 02 May 2015 18:55:56 +0200
+
+libslf4j-java (1.7.12-1) unstable; urgency=medium
+
+  * New upstream release
+  * Changed the source/level for the slf4j-jdk14 tests to 1.5
+  * Standards-Version updated to 3.9.6 (no changes)
+  * Moved the package to Git
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Wed, 29 Apr 2015 10:40:47 +0200
+
+libslf4j-java (1.7.7-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Mon, 01 Sep 2014 13:55:12 +0200
+
+libslf4j-java (1.7.6-1) unstable; urgency=medium
+
+  * New upstream release
+  * Switch to debhelper level 9
+  * Standards-Version updated to 3.9.5 (no changes)
+  * Use XZ compression for the upstream tarball
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Fri, 14 Feb 2014 00:06:41 +0100
+
+libslf4j-java (1.7.5-2) unstable; urgency=low
+
+  * debian/rules: Added ant-junit4 to the classpath to fix test failures
+    (Closes: #713178)
+  * debian/rules: Improved the clean target to allow rebuilds
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Wed, 26 Jun 2013 12:35:49 +0200
+
+libslf4j-java (1.7.5-1) unstable; urgency=low
+
+  * Upload to unstable.
+  * New upstream release.
+  * d/control: Bump Standards-Version to 3.9.4 (no changes needed).
+  * d/control: Use canonical URL for Vcs-* fields.
+  * d/build.xml: Exclude PerfTest (unstable behavior).
+
+ -- Damien Raude-Morvan <drazzib@debian.org>  Tue, 07 May 2013 23:12:09 +0200
+
+libslf4j-java (1.7.2-1) experimental; urgency=low
+
+  * New upstream release.
+  * SLF4J now requires JDK 1.5.
+  * d/control: Replace junit by junit4.
+
+ -- Damien Raude-Morvan <drazzib@debian.org>  Sun, 10 Feb 2013 13:02:46 +0100
+
+libslf4j-java (1.6.5-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update Standards-Version to 3.9.3: no changes needed.
+  * d/copyright: Upgrade to copyright-format 1.0.
+
+ -- Damien Raude-Morvan <drazzib@debian.org>  Mon, 04 Jun 2012 23:58:32 +0200
+
+libslf4j-java (1.6.4-1) unstable; urgency=low
+
+  * New upstream release.
+  * Merge changes from Ubuntu, thanks to James Page (Closes: #646092) :
+    + Enable test suite:
+      - d/ant.properties, d/build.xml: Define new targets to compile and
+        execute test suites for all jar files.
+      - d/control: Add ant-optional and junit to B-D's.
+      - d/rules: Define DEB_ANT_CHECK_TARGET to execute test suite and add
+        ant-junit and junit to DEB_JARS.
+    + d/control: Remove surplus dependencies - libjavassist-java,
+      libcommons-lang-java
+
+ -- Damien Raude-Morvan <drazzib@debian.org>  Tue, 01 Nov 2011 23:48:41 +0100
+
+libslf4j-java (1.6.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * Wrap and sort Build-Depends and Depends.
+  * Bump Standards-Version to 3.9.2: no changes needed.
+  * d/copyright: Use DEP-5 format.
+
+ -- Damien Raude-Morvan <drazzib@debian.org>  Thu, 22 Sep 2011 13:34:54 +0200
+
+libslf4j-java (1.6.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * d/control: Drop Depends on default-jre per Debian Java Policy as its
+    a library package.
+  * Switch to 3.0 (quilt) source format.
+  * Update Standards-Version: 3.9.1 (no changes needed).
+
+ -- Damien Raude-Morvan <drazzib@debian.org>  Fri, 04 Mar 2011 23:06:33 +0100
+
+libslf4j-java (1.5.11-2) unstable; urgency=low
+
+  * Really remove org/slf4j/impl/** from slf4j-api.jar
+    This should prevent unexpected java.lang.UnsupportedOperationException.
+
+ -- Damien Raude-Morvan <drazzib@debian.org>  Mon, 01 Mar 2010 22:50:56 +0100
+
+libslf4j-java (1.5.11-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update Standards-Version to 3.8.4 (no changes needed)
+
+ -- Damien Raude-Morvan <drazzib@debian.org>  Fri, 26 Feb 2010 22:03:36 +0100
+
+libslf4j-java (1.5.10-1) unstable; urgency=low
+
+  * New upstream release
+    - disable build of ext module as org/slf4j/cal10n is
+      not yet in Debian.
+  * Update my email address
+  * Bump debhelper version to >= 7
+
+ -- Damien Raude-Morvan <drazzib@debian.org>  Thu, 03 Dec 2009 23:35:00 +0100
+
+libslf4j-java (1.5.8-3) unstable; urgency=low
+
+  * Update Standards-Version to 3.8.3
+  * Compile classes for Java 1.4 / 1.5, don't allow classes
+    to be compiled in Java 1.6 format
+
+ -- Ludovic Claude <ludovic.claude@laposte.net>  Fri, 04 Sep 2009 17:26:32 +0100
+
+libslf4j-java (1.5.8-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Torsten Werner <twerner@debian.org>  Sun, 09 Aug 2009 12:42:35 +0200
+
+libslf4j-java (1.5.8-1.1) experimental; urgency=low
+
+  [Ludovic Claude]
+  * Non-maintainer upload.
+  * Add the Maven POMs to the package
+  * Add a Build-Depends-Indep dependency on maven-repo-helper
+  * Use mh_installpom and mh_installjar to install the POM and the jar to the
+    Maven repository
+  * Fix Lintian warning: license for the Debian packaging is GPL version 2,
+    according to Varun Hiremath.
+  * Use default-jdk instead of default-jdk-builddep for Build-Depends as no
+    components are built with gcj.
+
+  [ Emmanuel Bourg and Sylvestre Ledru]
+  * Update of the URLs
+  * Rename Jakarta Commons to Apache Commons
+
+ -- Ludovic Claude <ludovic.claude@laposte.net>  Thu, 02 Jul 2009 23:16:26 +0100
+
+libslf4j-java (1.5.8-1ubuntu1) karmic; urgency=low
+
+  * debian/control: Set libslf4j-java runtime dependency on
+    "default-jre-headless | java2-runtime-headless" (LP: #387884)
+
+ -- Thierry Carrez <thierry.carrez@ubuntu.com>  Thu, 18 Jun 2009 15:23:25 +0200
+
+libslf4j-java (1.5.8-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/control:
+    - Bump Standards-Version to 3.8.1: no changes needed
+    - Move libslf4j-java to "java" section
+    - Move ant to Build-Depends (needed for clean target)
+    - Build-Depends on default-jdk-builddep
+  * debian/rules:
+    - use /usr/lib/jvm/default-java as JAVA_HOME
+
+ -- Damien Raude-Morvan <drazzib@drazzib.com>  Mon, 15 Jun 2009 22:20:39 +0200
+
+libslf4j-java (1.5.6-1) unstable; urgency=low
+
+  * New upstream release
+   - new slf4j-ext module
+   - add Build-Depends on libjavassist-java and libcommons-lang-java
+  * add Depends ${misc:Depends} as suggest by Lintian
+  * add Suggests for :
+   - libjavassist-java
+   - liblog4j1.2-java
+   - libcommons-logging-java
+
+ -- Damien Raude-Morvan <drazzib@drazzib.com>  Mon, 09 Mar 2009 21:22:10 +0100
+
+libslf4j-java (1.5.2-1) unstable; urgency=low
+
+  * New upstream release
+  * Bump Standards-Version to 3.8.0
+  * Update debian/ant.properties and debian/build.xml files
+  * debian/copyright: remove the full text of Apache 2.0 license, as now
+    is included in common licenses
+
+ -- Varun Hiremath <varun@debian.org>  Sat, 05 Jul 2008 03:16:01 +0530
+
+libslf4j-java (1.5.0-2) unstable; urgency=low
+
+  * Remove org/slf4j/impl/* classes from slf4j-api.jar (Closes: #470486)
+
+ -- Varun Hiremath <varun@debian.org>  Tue, 11 Mar 2008 23:41:52 +0530
+
+libslf4j-java (1.5.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Varun Hiremath <varun@debian.org>  Thu, 28 Feb 2008 11:12:38 +0530
+
+libslf4j-java (1.4.3-1) unstable; urgency=low
+
+  * Initial release (Closes: #413751)
+
+ -- Varun Hiremath <varun@debian.org>  Sun, 24 Feb 2008 12:32:07 +0530

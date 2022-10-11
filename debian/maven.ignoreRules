@@ -1,0 +1,5 @@
+
+org.apache.maven.plugins maven-assembly-plugin * * * *
+org.apache.maven.plugins maven-source-plugin * * * *
+org.apache.maven.wagon wagon-ssh * * * *
+org.codehaus.mojo animal-sniffer-maven-plugin * * * *

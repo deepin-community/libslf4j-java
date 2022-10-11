@@ -1,0 +1,19 @@
+From: Markus Koschany <apo@debian.org>
+Date: Wed, 24 Feb 2016 19:11:21 +0100
+Subject: slf4j-api MANIFEST
+
+Remove Import-Package requirement for org.slf4j.impl which triggers runtime
+errors in Netbeans and make the jgit module unusable.
+
+Forwarded: not-needed
+---
+ slf4j-api/src/main/resources/META-INF/MANIFEST.MF | 1 -
+ 1 file changed, 1 deletion(-)
+
+--- a/slf4j-api/src/main/resources/META-INF/MANIFEST.MF
++++ b/slf4j-api/src/main/resources/META-INF/MANIFEST.MF
+@@ -9,4 +9,3 @@
+   org.slf4j.spi;version=${parsedVersion.osgiVersion},
+   org.slf4j.helpers;version=${parsedVersion.osgiVersion},
+   org.slf4j.event;version=${parsedVersion.osgiVersion}
+-Import-Package: org.slf4j.impl;version=${slf4j.api.minimum.compatible.version}
