@@ -1,1 +1,13 @@
-.pc/
+.settings
+target
+.classpath
+.project
+*~
+*.tmproj
+*.iml
+.idea
+.scala_dependencies
+integration/bundle/
+integration/felix-cache/
+runner
+.DS_Store
